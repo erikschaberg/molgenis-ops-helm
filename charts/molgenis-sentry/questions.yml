@@ -60,7 +60,7 @@ questions:
     default: ''
     description: "Specify the app-ID from OAuth app on Github"
     type: string
-    required: false
+    required: true
     group: "Authentication"
   - variable: sentry.web.env[1].name
     label: Github Secret Key
@@ -75,7 +75,7 @@ questions:
     default: ''
     description: "Specify the secret from OAuth app on Github"
     type: string
-    required: false
+    required: true
     group: "Authentication"
   - variable: sentry.filestore.filesystem.persistence.enabled
     label: Persistence
