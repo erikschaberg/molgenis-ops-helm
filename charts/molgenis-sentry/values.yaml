@@ -3,13 +3,6 @@
 # Declare variables to be passed into your templates.
 
 sentry:
-  web:
-    env:
-      - name: GITHUB_APP_ID
-        value:
-      - name: GITHUB_API_SECRET
-        value:
-
   worker:
     resources:
       limits:
