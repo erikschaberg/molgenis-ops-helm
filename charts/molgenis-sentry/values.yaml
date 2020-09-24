@@ -6,9 +6,9 @@ sentry:
   web:
     env:
       - name: GITHUB_APP_ID
-        value: xxxx
+        value:
       - name: GITHUB_API_SECRET
-        value: xxxx
+        value:
 
   worker:
     resources:

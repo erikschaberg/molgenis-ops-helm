@@ -95,7 +95,7 @@ questions:
         default: ''
         type: string
         required: false
-  - variable: sentry.redis.master.persistence.enabled
+  - variable: sentry.redis.master.filestore.filesystem.persistence.enabled
     label: Persistence for Redis
     default: false
     type: boolean
