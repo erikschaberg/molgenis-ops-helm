@@ -57,7 +57,7 @@ questions:
     show_if: 'false'
   - variable: sentry.web.env[0].value
     label: Github App ID
-    default: xxxx
+    default: ''
     description: "Specify the app-ID from OAuth app on Github"
     type: string
     required: false
@@ -72,7 +72,7 @@ questions:
     show_if: 'false'
   - variable: sentry.web.env[1].value
     label: Github Secret
-    default: xxxx
+    default: ''
     description: "Specify the secret from OAuth app on Github"
     type: string
     required: false
