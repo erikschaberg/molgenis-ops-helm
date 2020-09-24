@@ -77,7 +77,7 @@ questions:
     type: string
     required: false
     group: "Authentication"
-  - variable: sentry.persistence.enabled
+  - variable: sentry.filestore.filesystem.persistence.enabled
     label: Persistence
     default: false
     type: boolean
@@ -85,31 +85,13 @@ questions:
     group: "Persistence for Sentry"
     show_subquestion_if: true
     subquestions:
-      - variable: sentry.persistence.storageClass
+      - variable: sentry.filestore.filesystem.persistence.storageClass
         label: Specify storageClass for Sentry
         default: ''
         type: storageclass
         required: false
-      - variable: sentry.persistence.existingClaim
+      - variable: sentry.filestore.filesystem.persistence.existingClaim
         label: Specify existing volume claim for Sentry
-        default: ''
-        type: string
-        required: false
-  - variable: sentry.postgresql.persistence.enabled
-    label: Persistence for PostgreSQL
-    default: false
-    type: boolean
-    required: true
-    group: "Persistence for PostgreSQL"
-    show_subquestion_if: true
-    subquestions:
-      - variable: sentry.postgresql.persistence.storageClass
-        label: Specify storageClass for PostgreSQL
-        default: ''
-        type: storageclass
-        required: false
-      - variable: sentry.postgresql.persistence.existingClaim
-        label: Specify existing volume claim for PostgreSQL
         default: ''
         type: string
         required: false
@@ -120,14 +102,3 @@ questions:
     required: true
     group: "Persistence for Redis"
     show_subquestion_if: true
-    subquestions:
-      - variable: sentry.redis.master.persistence.storageClass
-        label: Specify storageClass for Redis
-        default: ''
-        type: storageclass
-        required: false
-      - variable: sentry.redis.master.persistence.existingClaim
-        label: Specify existing volume claim for Redis
-        default: ''
-        type: string
-        required: false
