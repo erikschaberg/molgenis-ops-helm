@@ -47,7 +47,7 @@ questions:
     type: string
     required: true
     group: "Provisioning"
-  - variable: sentry.web.env[0].name
+  - variable: sentry.web.env[15].name
     label: Github App ID Key
     default: GITHUB_APP_ID
     description: "Specify the app-ID key from OAuth app on Github"
@@ -55,14 +55,14 @@ questions:
     required: false
     group: "Authentication"
     show_if: 'false'
-  - variable: sentry.web.env[0].value
+  - variable: sentry.web.env[15].value
     label: Github App ID
-    default: ''
+    default: 'replace_me'
     description: "Specify the app-ID from OAuth app on Github"
     type: string
     required: true
     group: "Authentication"
-  - variable: sentry.web.env[1].name
+  - variable: sentry.web.env[16].name
     label: Github Secret Key
     default: GITHUB_API_SECRET
     description: "Specify the secret key from OAuth app on Github"
@@ -70,9 +70,9 @@ questions:
     required: false
     group: "Authentication"
     show_if: 'false'
-  - variable: sentry.web.env[1].value
+  - variable: sentry.web.env[16].value
     label: Github Secret
-    default: ''
+    default: 'replace_me'
     description: "Specify the secret from OAuth app on Github"
     type: string
     required: true
