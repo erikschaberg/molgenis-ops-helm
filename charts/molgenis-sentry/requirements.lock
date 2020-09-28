@@ -1,6 +1,6 @@
 dependencies:
 - name: sentry
-  repository: https://kubernetes-charts.storage.googleapis.com/
-  version: 4.3.0
-digest: sha256:22c5f20a7150658e8513dfbf7da35554d41d7c00f07bfcf51f777dbf93b35d69
-generated: "2020-09-23T09:58:17.309279+02:00"
+  repository: https://sentry-kubernetes.github.io/charts
+  version: 5.2.3
+digest: sha256:83d85d4c331c675f8f41df30bb1a9a6361e06660bc2e9f347698422ce22154c8
+generated: "2020-09-28T09:01:35.622337+02:00"

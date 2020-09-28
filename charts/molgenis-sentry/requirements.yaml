@@ -1,4 +1,4 @@
 dependencies:
   - name: sentry
-    version: 4.3.0
-    repository: https://kubernetes-charts.storage.googleapis.com/
+    version: 5.2.2
+    repository: https://sentry-kubernetes.github.io/charts
